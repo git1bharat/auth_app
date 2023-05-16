@@ -10,6 +10,7 @@ part 'signin_state.dart';
 class SignInBloc extends Bloc<SignInEvent, SignInState> {
   AuthRepository authRepository;
   SignInBloc({required this.authRepository}) : super(SignInInitialState()) {
+    // some comment
     on<SignInEvent>((event, emit) async {
       try {
         emit(SignInLoadingState());
